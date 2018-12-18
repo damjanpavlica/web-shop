@@ -1,0 +1,31 @@
+body {
+
+}
+
+.wrapper {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  max-width: 30%;
+  padding: 10px;
+}
+
+td:nth-child(2) {
+  font-weight: bold;
+  font-style: italic;
+}
+
+td:nth-child(3),
+td:nth-child(4) {
+  white-space: nowrap;
+}
+
+td:nth-child(4) input {
+  width: 80px;
+}
