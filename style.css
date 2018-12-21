@@ -7,8 +7,15 @@ img {
 }
 
 .wrapper {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }
 
 table {
@@ -54,4 +61,28 @@ td:nth-child(4) input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bnt-link {
+  text-decoration: none;
+  border: 2px solid crimson;
+  display: inline-block;
+  padding: 10px;
+  color: crimson;
+  transition: .2s;
+}
+
+.bnt-link:hover {
+  color: #fff;
+  border: 2px solid #fff;
+  background: crimson;
+}
+
+.ukupno {
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+  border: 1px dashed black;
+  padding: 10px;
+  margin: 0;
 }
