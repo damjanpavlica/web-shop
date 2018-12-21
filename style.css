@@ -64,6 +64,7 @@ td:nth-child(4) input {
 }
 
 .bnt-link {
+  background: #fff;
   text-decoration: none;
   border: 2px solid crimson;
   display: inline-block;
@@ -78,11 +79,15 @@ td:nth-child(4) input {
   background: crimson;
 }
 
-.ukupno {
+.ukupno-wrapper {
   position: fixed;
   bottom: 20px;
   right: 5%;
   border: 1px dashed black;
   padding: 10px;
   margin: 0;
+}
+
+label {
+  display: block;
 }
