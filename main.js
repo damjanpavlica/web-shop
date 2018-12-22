@@ -1,25 +1,25 @@
-const ukupno = document.getElementById("ukupno")
-const brojArtikala = document.getElementById("broj-artikala")
-const cene = document.querySelectorAll(".cena")
-const kolicine = document.querySelectorAll("td:nth-child(4) input")
+const ukupnoElement = document.getElementById("ukupno")
+const brojArtikalaElement = document.getElementById("broj-artikala")
+const ceneElementi = document.querySelectorAll(".cena")
+const kolicineElementi = document.querySelectorAll("td:nth-child(4) input")
 
 function azuriraj() {
   let total = 0
   let brojProizvoda = 0
-  for (let i = 0; i < cene.length; i++) {
-    const cena = Number(cene[i].innerText)
-    const kolicina = Number(kolicine[i].value)
+  for (let i = 0; i < ceneElementi.length; i++) {
+    const cena = Number(ceneElementi[i].innerText)
+    const kolicina = Number(kolicineElementi[i].value)
     if (kolicina) {
       total += cena * kolicina
       brojProizvoda += kolicina
     }
   }
-  ukupno.innerText = total
-  brojArtikala.innerText = brojProizvoda
+  ukupnoElement.innerText = total
+  brojArtikalaElement.innerText = brojProizvoda
 }
 
-for (let i = 0; i < cene.length; i++) {
-  kolicine[i].addEventListener("input", azuriraj)
+for (let i = 0; i < ceneElementi.length; i++) {
+  kolicineElementi[i].addEventListener("input", azuriraj)
 }
 
 azuriraj()
