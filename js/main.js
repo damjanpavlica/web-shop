@@ -11,7 +11,7 @@ function azuriraj() {
   for (let i = 0; i < ceneElementi.length; i++) {
     const kolicina = Number(kolicineElementi[i].value)
     if (kolicina) {
-      const naziv = naziviElementi[i].innerText
+      const naziv = naziviElementi[i].innerText.trim()
       const cena = Number(ceneElementi[i].innerText)
       ukupno += cena * kolicina
       brojArtikala += kolicina
